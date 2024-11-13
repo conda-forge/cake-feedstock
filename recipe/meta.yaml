@@ -1,5 +1,5 @@
 {% set name = "cake" %}
-{% set version = "4.2.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cake-build/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 467158d7f6455f4dfc97a9ccfd7688c84531427c7089ad83f69b09190892d4a7
+  sha256: 0c77a4a8626b1f6aa886e542026f33e2645bda7177e66c6ca1f60a6cf80b9bf0
 
 build:
   noarch: generic
