@@ -3,7 +3,7 @@ About cake-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cake-feedstock/blob/main/LICENSE.txt)
 
-Home: https://cakebuild.net
+Home: https://cakebuild.net/
 
 Package license: MIT
 
