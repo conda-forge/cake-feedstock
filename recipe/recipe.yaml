@@ -1,17 +1,17 @@
-{% set name = "cake" %}
-{% set version = "4.2.0" %}
+context:
+  version: 4.2.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: cake
+  version: ${{ version }}
 
 source:
-  url: https://github.com/cake-build/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/cake-build/cake/archive/v${{ version }}.tar.gz
   sha256: 467158d7f6455f4dfc97a9ccfd7688c84531427c7089ad83f69b09190892d4a7
 
 build:
-  noarch: generic
   number: 0
+  noarch: generic
 
 requirements:
   build:
@@ -22,18 +22,18 @@ requirements:
   run:
     - dotnet
 
-test:
-  commands:
-    - {{ name }} --help
+tests:
+  - script:
+      - cake --help
 
 about:
-  home: https://cakebuild.net
   license: MIT
   license_file:
     - LICENSE
     - license-files/
   summary: Cake (C# Make) is a cross platform build automation system
-  dev_url: https://github.com/cake-build/{{ name }}
+  homepage: https://cakebuild.net
+  repository: https://github.com/cake-build/cake
 
 extra:
   recipe-maintainers:
