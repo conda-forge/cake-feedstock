@@ -29,3 +29,5 @@ EOF
 
 # Download licenses with dotnet-project-licenses
 dotnet-project-licenses --input src/Cake/Cake.csproj -t -d license-files
+
+rm ${PREFIX}/bin/dotnet
