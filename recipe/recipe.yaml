@@ -1,5 +1,5 @@
 context:
-  version: "6.0.0"
+  version: "6.1.0"
 
 package:
   name: cake
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cake-build/cake/archive/v${{ version }}.tar.gz
-  sha256: cdfe2444b684d595c1f8644828b244540402c8ee09f6fef6db1e20eb3d933617
+  sha256: 90c172d5ca8bd3b274cb7cbadca0a4de7f627663f2915c3ac33fe99ae7937f0d
 
 build:
   number: 0
